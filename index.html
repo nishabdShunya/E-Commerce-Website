@@ -6,85 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/navigation.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">STORE</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li><a class="main-nav-links active" href="./index.html">HOME</a></li>
+            <li><a class="main-nav-links" href="./store.html">STORE</a></li>
+            <li><a class="main-nav-links" href="./about.html">ABOUT</a></li>
         </ul>
-        <a href="#"><span>Cart</span><sup>0</sup></a>
+        <a id="cart-nav-link" href="#"><span>Cart</span><sup>0</sup></a>
     </nav>
-    <header>
+    <header id="home-header">
         <h1>The Generics</h1>
+        <button id="get-album-btn">Get our Latest Album</button>
+        <button id="play-btn">&#9658;</button>
     </header>
-    <main>
-        <section id="music">
-            <h2>Music</h2>
-            <ul id="music-list">
-                <li>
-                    <h3>Vivid Fire</h3>
-                    <img src="./images/vivid-fire.jpg" alt="">
-                    <div>
-                        <p><span>$</span>12.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-                <li>
-                    <h3>Morning Dew</h3>
-                    <img src="./images/morning-dew.jpg" alt="">
-                    <div>
-                        <p><span>$</span>14.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-                <li>
-                    <h3>Fly</h3>
-                    <img src="./images/fly.jpg" alt="">
-                    <div>
-                        <p><span>$</span>9.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-                <li>
-                    <h3>Demon Eyes</h3>
-                    <img src="./images/demon-eyes.jpg" alt="">
-                    <div>
-                        <p><span>$</span>19.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section id="merch">
-            <h2>Merch</h2>
-            <ul id="merch-list">
-                <li>
-                    <h3>T-Shirt</h3>
-                    <img src="./images/t-shirt.jpg" alt="t-shirt">
-                    <div>
-                        <p><span>$</span>19.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-                <li>
-                    <h3>Coffee Cup</h3>
-                    <img src="./images/coffee-cup.jpg" alt="">
-                    <div>
-                        <p><span>$</span>6.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <div id="submit-btn-container">
-            <form action="#">
-                <button type="submit" class="submit-btn">See The Cart</button>
-            </form>
-        </div>
+    <main id="home-main">
+        <h2>TOURS</h2>
+        <ul id="tours">
+            <li class="tour">
+                <ul id="schedules">
+                    <li class="schedule">JUL 16</li>
+                    <li class="schedule city">DETROIT, MI</li>
+                    <li class="schedule location">DTE ENERGY MUSIC THEATRE</li>
+                    <li class="schedule"><button class="buy-ticket-btn">BUY TICKETS</button></li>
+                </ul>
+            </li>
+            <li class="tour">
+                <ul id="schedules">
+                    <li class="schedule">JUL 19</li>
+                    <li class="schedule city">TORONTO, ON</li>
+                    <li class="schedule location">BUDWEISER STAGE</li>
+                    <li class="schedule"><button class="buy-ticket-btn">BUY TICKETS</button></li>
+                </ul>
+            </li>
+            <li class="tour">
+                <ul id="schedules">
+                    <li class="schedule">JUL 22</li>
+                    <li class="schedule city">BRISTOW, VA</li>
+                    <li class="schedule location">JIGGY LUBE LIVE</li>
+                    <li class="schedule"><button class="buy-ticket-btn">BUY TICKETS</button></li>
+                </ul>
+            </li>
+            <li class="tour">
+                <ul id="schedules">
+                    <li class="schedule">JUL 29</li>
+                    <li class="schedule city">PHOENIX, AZ</li>
+                    <li class="schedule location">AK-CHIN PAVILION</li>
+                    <li class="schedule"><button class="buy-ticket-btn">BUY TICKETS</button></li>
+                </ul>
+            </li>
+            <li class="tour">
+                <ul id="schedules">
+                    <li class="schedule">AUG 2</li>
+                    <li class="schedule city">LAS VEGAS, NV</li>
+                    <li class="schedule location">T-MOBILE ARENA</li>
+                    <li class="schedule"><button class="buy-ticket-btn">BUY TICKETS</button></li>
+                </ul>
+            </li>
+            <li class="tour">
+                <ul id="schedules">
+                    <li class="schedule">AUG 7</li>
+                    <li class="schedule city">CONCORD, CA</li>
+                    <li class="schedule location">CONCORD PAVILION</li>
+                    <li class="schedule"><button class="buy-ticket-btn">BUY TICKETS</button></li>
+                </ul>
+            </li>
+        </ul>
     </main>
     <footer>
         <p>The Generics</p>

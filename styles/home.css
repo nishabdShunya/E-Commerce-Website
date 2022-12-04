@@ -1,0 +1,109 @@
+#home-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+#get-album-btn{
+    width: 30rem;
+    height: 5rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    font-family: inherit;
+    font-size: 2rem;
+    color:  rgb(35, 37, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+#get-album-btn:hover {
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#play-btn {
+    width: 8rem;
+    height: 8rem;
+    padding-left: 1.5rem;
+    border-radius: 50%;
+    font-family: inherit;
+    font-size: 4rem;
+    color:  rgb(35, 37, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+#play-btn:hover {
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#home-main {
+    padding-bottom: 5rem;
+}
+
+#home-main,
+#tours,
+#schedules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tours {
+    list-style-type: none;
+    padding: 0;
+    align-items: stretch;
+    width: 60vw;
+}
+
+.tour {
+    border: 1px solid rebeccapurple;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+#schedules {
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.schedule {
+    flex: 1;
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.location {
+    flex: 2;
+}
+
+.buy-ticket-btn {
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: rgb(226, 235, 136);
+    border: none;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    transition: background 300ms ease-in, color 300ms ease-in;
+}
+
+.buy-ticket-btn:hover {
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}

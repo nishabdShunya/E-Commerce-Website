@@ -1,0 +1,86 @@
+nav {
+    background-color: rebeccapurple;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    flex: 14;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+    transition: 300ms ease-in;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+.main-nav-links {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 8rem;
+    transition: background 300ms ease-in;
+}
+
+.main-nav-links:hover {
+    background-color: rgb(68, 71, 90);
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(35, 37, 41);
+    color: white;
+    cursor: pointer;
+}
+
+#cart-nav-link {
+    flex: 1;
+    padding: 0.4rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+#cart-nav-link span {
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    transition: all 300ms ease-in;
+}
+
+#cart-nav-link span:hover {
+    background-color: rgb(226, 235, 136);
+    border-color: rgb(226, 235, 136);
+    color: black;
+    cursor: pointer;
+}
+
+#cart-nav-link sup {
+    align-self: flex-start;
+    padding: 0.05rem;
+    margin-left: 0.3rem;
+    font-size: 1.4rem;
+}
+
+#cart-nav-link sup:hover {
+    color: rgb(226, 235, 136);
+    cursor: pointer;
+}
