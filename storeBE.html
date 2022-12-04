@@ -8,7 +8,7 @@
     <title>E-Commerce Project</title>
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/navigation.css">
-    <link rel="stylesheet" href="./styles/store.css">
+    <link rel="stylesheet" href="./styles/storeBE.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 </head>
 
@@ -25,79 +25,19 @@
         <h1>The Generics</h1>
     </header>
     <main id="store-main">
-        <section id="music">
-            <h2>MUSIC</h2>
-            <ul id="music-list">
-                <!-- <li>
-                    <h3 class="item-title">Vivid Fire</h3>
-                    <div class="img-container">
-                        <img class="item-img" src="./images/vivid-fire.jpg" alt="">
-                    </div>
-                    <div class="add-to-cart-container">
-                        <p class="item-price"><span>$</span>12.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-                <li>
-                    <h3 class="item-title">Morning Dew</h3>
-                    <div class="img-container">
-                        <img class="item-img" src="./images/morning-dew.jpg" alt="">
-                    </div>
-                    <div class="add-to-cart-container">
-                        <p class="item-price"><span>$</span>14.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-                <li>
-                    <h3 class="item-title">Fly</h3>
-                    <div class="img-container">
-                        <img class="item-img" src="./images/fly.jpg" alt="">
-                    </div>
-                    <div class="add-to-cart-container">
-                        <p class="item-price"><span>$</span>9.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-                <li>
-                    <h3 class="item-title">Evil Eyes</h3>
-                    <div class="img-container">
-                        <img class="item-img" src="./images/evil-eyes.jpg" alt="">
-                    </div>
-                    <div class="add-to-cart-container">
-                        <p class="item-price"><span>$</span>19.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li> -->
-            </ul>
+
+        <!-- PRODUCTS -->
+        <section id="products">
+            <h2>PRODUCTS</h2>
+            <ul id="product-list"></ul>
         </section>
-        <section id="merch">
-            <h2>MERCH</h2>
-            <ul id="merch-list">
-                <li>
-                    <h3 class="item-title">T-Shirt</h3>
-                    <div class="img-container">
-                        <img class="item-img" src="./images/t-shirt.jpg" alt="t-shirt">
-                    </div>
-                    <div class="add-to-cart-container">
-                        <p class="item-price"><span>$</span>19.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-                <li>
-                    <h3 class="item-title">Coffee Cup</h3>
-                    <div class="img-container">
-                        <img class="item-img" src="./images/coffee-cup.jpg" alt="coffee-cup">
-                    </div>
-                    <div class="add-to-cart-container">
-                        <p class="item-price"><span>$</span>6.99</p>
-                        <button class="section-btns">Add To Cart</button>
-                    </div>
-                </li>
-            </ul>
-        </section>
+
+        <!-- See The Cart Button -->
         <div id="submit-btn-container">
             <button type="submit" id="see-cart-btn">See The Cart</button>
         </div>
+
+        <!-- CART CONTAINER -->
         <div id="cart-container">
             <div id="cart-header">
                 <h2>CART</h2>
@@ -107,7 +47,10 @@
             <ul id="cart"></ul>
             <button id="purchase-btn">PURCHASE</button>
         </div>
+
+        <!-- NOTIFICATION CONTAINER -->
         <div id="notification-container"></div>
+
     </main>
     <footer>
         <p>The Generics</p>

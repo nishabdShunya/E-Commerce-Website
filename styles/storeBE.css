@@ -1,0 +1,240 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#products,
+#submit-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98vw;
+}
+
+#product-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+}
+
+#product-list>li {
+    width: 30%;
+    background-color: rgb(68, 71, 90);
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.add-to-cart-container {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgb(40, 42, 54);
+    border-radius: 1rem;
+}
+
+section h2,
+#submit-btn-container {
+    background-color: rgb(68, 71, 90);
+    color: rgb(226, 235, 136);
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(226, 235, 136, 0.7);
+}
+
+.section-btns {
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: rgb(226, 235, 136);
+    border: none;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    transition: background 300ms ease-in, color 300ms ease-in;
+}
+
+.section-btns:hover {
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}
+
+#see-cart-btn {
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    transition: background 300ms ease-in, color 300ms ease-in;
+}
+
+#see-cart-btn:hover {
+    background-color: rgb(226, 235, 136);
+    color: black;
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.5);
+}
+
+.img-container {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#cart-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+#cart-close-btn {
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    transition: background 300ms ease-in, color 300ms ease-in;
+}
+
+#cart-close-btn:hover {
+    background-color: rgb(226, 235, 136);
+    color: black;
+    cursor: pointer;
+}
+
+#cart {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.cart-item {
+    width: 80%;
+    border-radius: 0.5rem;
+    background-color: rgb(68, 71, 90);
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+}
+
+.cart-item ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-item ul li {
+    margin: 0 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-item ul img {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+.cart-item ul input {
+    font-family: inherit;
+    width: 50%;
+}
+
+.remove-btn {
+    background-color: rgb(226, 235, 136);
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    transition: background 300ms ease-in, color 300ms ease-in;
+}
+
+.remove-btn:hover {
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}
+
+#purchase-btn {
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2rem 0;
+    margin: 3rem 0;
+    width: 80%;
+    transition: background 300ms ease-in, color 300ms ease-in;
+}
+
+#purchase-btn:hover {
+    background-color: rgb(226, 235, 136);
+    color: black;
+    cursor: pointer;
+}
+
+#notification-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.notification {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: inherit;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
+}
