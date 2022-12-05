@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Project</title>
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/navigation.css">
-    <link rel="stylesheet" href="./styles/storeBE.css">
+    <link rel="stylesheet" href="./styles/commonFromBE.css">
+    <link rel="stylesheet" href="./styles/navigationFromBE.css">
+    <link rel="stylesheet" href="./styles/storeFromBE.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 </head>
 
@@ -19,10 +19,10 @@
             <li><a class="main-nav-links active" href="./store.html">STORE</a></li>
             <li><a class="main-nav-links" href="./about.html">ABOUT</a></li>
         </ul>
-        <a id="cart-nav-link" href="#"><span>Cart</span><sup id="cart-qty">0</sup></a>
+        <button id="cart-nav-btn" class="active">Cart (<span id="cart-qty">0</span>)</button>
     </nav>
     <header>
-        <h1>The Generics</h1>
+        <h1>Online Shop</h1>
     </header>
     <main id="store-main">
 
@@ -45,7 +45,9 @@
                 <button id="cart-close-btn">x</button>
             </div>
             <ul id="cart"></ul>
-            <button id="purchase-btn">PURCHASE</button>
+            <div id="cart-footer">
+                <button id="purchase-btn">PURCHASE</button>
+            </div>
         </div>
 
         <!-- NOTIFICATION CONTAINER -->
@@ -62,7 +64,7 @@
     </footer>
 </body>
 
-<script src="storeBE.js"></script>
+<script src="storeFromBE.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"></script>
 
 </html>
