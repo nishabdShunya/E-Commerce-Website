@@ -1,0 +1,36 @@
+#orders-main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#orders-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-items{
+    background-color: black;
+    color:gold;
+    padding: 1rem;
+    margin: 1rem;
+    width: 90vw;
+}
+
+.order-items hr{
+    border: 1px solid gold;
+}
+
+.order-products-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.order-products-list li{
+    color: white;
+    margin: 2rem;
+}

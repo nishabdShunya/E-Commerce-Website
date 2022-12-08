@@ -1,4 +1,4 @@
-main {
+#store-main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,8 +128,10 @@ img {
 #purchase-btn {
     background-color: gold;
     border: none;
-    padding: 1rem 0;
-    width: 25%;
+    padding: 1rem 3rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    /* width: 25%; */
 }
 
 #purchase-btn:hover {

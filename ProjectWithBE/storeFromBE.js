@@ -208,7 +208,14 @@ function hideCart(event) {
     cartContainer.style.display = 'none';
 }
 
-
-
-
-// current cart id - put request
+// Placing Order on Cart Page
+const orderNowBtn = document.getElementById('purchase-btn');
+orderNowBtn.addEventListener('click', (event) => {
+    axios.post('http://localhost:3000/create-order')
+        .then(response => {
+            showNotification(response.data.message);
+            emptyCart();
+            updateTotal();
+        })
+        .catch(err => console.log(err));
+})
