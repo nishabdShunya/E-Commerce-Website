@@ -1,22 +1,3 @@
-/* 
-function quantityChanged(event) {
-    const input = event.target;
-    if (isNaN(input.value) || input.value < 1) {
-        input.value = 1;
-    }
-    updateTotal();
-}
-
-// Purchase
-document.getElementById('purchase-btn').addEventListener('click', (event) => {
-    alert('Thank you for yout purchase.')
-    while (cart.hasChildNodes()) {
-        cart.removeChild(cart.firstChild)
-    }
-    updateTotal();
-});
-*/
-
 // Code after connecting to backend
 const productList = document.getElementById('product-list');
 const cart = document.getElementById('cart');
@@ -181,17 +162,18 @@ function removeItemFromCart(id) {
         .catch(err => console.log(err));
 }
 
-/* 
 function changeOfQuantity(event, id) {
-    console.log(id);
     const input = event.target;
     if (isNaN(input.value) || input.value < 1) {
         input.value = 1;
     }
-    console.log(input.value);
     axios.patch(`http://localhost:3000/cart/${id}`, { quantity: input.value })
+        .then(response => {
+            emptyCart();
+            createCart();
+        })
+        .catch(err => console.log(err))
 }
-*/
 
 // Opening & Closing the Cart
 seeCartBtn.addEventListener('click', showCart);

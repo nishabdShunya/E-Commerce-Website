@@ -47,10 +47,6 @@
     cursor: pointer;
 }
 
-#home-main {
-    padding-bottom: 5rem;
-}
-
 #home-main,
 #tours,
 #schedules {
@@ -62,7 +58,7 @@
 
 #tours {
     list-style-type: none;
-    padding: 0;
+    padding: 2rem 0;
     align-items: stretch;
     width: 60vw;
 }
